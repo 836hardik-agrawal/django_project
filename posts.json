@@ -1,37 +1,37 @@
 [
     {
       "title": "My Updated Post",
-     
+      "content":"My Blog 3",
       "user_id": 1
     },
     {
       "title": "A Second Post",
-     
+      "content":"My Blog 3",
       "user_id": 2
     },
     {
       "title": "Top 5 Programming Lanaguages",
-     
+      "content":"My Blog 3",
       "user_id": 1
     },
     {
       "title": "Sublime Text Tips and Tricks",
-      
+      "content":"My Blog 3",
       "user_id": 1
     },
     {
       "title": "Best Python IDEs",
-     
+      "content":"My Blog 3",
       "user_id": 1
     },
     {
       "title": "Flask vs Django - Which Is Better?",
-    
+      "content":"My Blog 3",
       "user_id": 2
     },
     {
       "title": "You Won't Believe These Clickbait Titles!",
-     
+      "content":"My Blog 3",
       "user_id": 2
     }
     
