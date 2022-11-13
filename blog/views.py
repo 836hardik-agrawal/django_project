@@ -16,6 +16,7 @@ posts=[
        'title':'BLog post1',
        'content':'My first blog',
        'created_on':'15/10/2022',
+       'college_name':'IIT BHU',
 
 
     },
@@ -24,6 +25,9 @@ posts=[
        'title':'BLog post2',
        'content':'My second blog',
        'created_on':'15/10/2022',
+       'college_name':'IIT BHU',
+
+
 
     }
 ]
@@ -55,13 +59,13 @@ class PostDetailView(DetailView):
     
 class PostCreateView(LoginRequiredMixin,CreateView):
     model=Post
-    fields=['title','content']
+    fields=['title','content','collegename']
     def form_valid(self,form):
         form.instance.author=self.request.user
         return super().form_valid(form)
 class PostUpdateView(LoginRequiredMixin,UserPassesTestMixin,UpdateView):
     model=Post
-    fields=['title','content']
+    fields=['title','content','collegename']
 
     def form_valid(self,form):
         form.instance.author==self.request.user

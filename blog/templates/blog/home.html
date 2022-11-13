@@ -9,7 +9,9 @@
                <div class="article-metadata">
                <a class="mr-2" href="{%url 'user-posts' post.author.username %}">{{post.author}}</a>
                <small class="text-muted">{{post.created_on|date:"F d,Y"}} </small>
+              <a class="article-title" href="{%url 'post-detail' post.id %}">{{post.collegename}}</a>
                <div>
+                 
                    <h2><a class="article-title" href="{%url 'post-detail' post.id %}">{{post.title}}</a></h2>
                    <h2><a class="article-content" href="{%url 'post-detail' post.id %}">{{post.content}}</a></h2>
                </div>
